@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO</title>
+    <style>
+        .minha_div
+        {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    Exemplo de código
+    <br>
+    clique neste botão 
+    <br>
+    <button onclick="Trocar_Cor();">
+        <img src="lapis.png" width="30px">
+        <br>
+        <b> Exemplo </b>
+    </button>
+    
+    <div class="minha_div" id="minha_div"> 
+        Texto dentro da div222
+    </div>
+
+</body>
+<script>
+    var contador = 10
+
+    function Trocar_Cor() 
+    {
+        
+        minha_div.style.backgroundColor = "lightgreen"
+        minha_div.style.borderStyle = "solid"
+        minha_div.style.borderColor = "red"
+        contador= contador + 1
+        minha_div.innerHTML = contador
+    }
+</script>
+</html>
